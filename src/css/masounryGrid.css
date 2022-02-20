@@ -1,0 +1,93 @@
+.container {
+  overflow: hidden;
+}
+
+.item {
+  position: absolute;
+  width: 100px;
+  color: white;
+  text-align: center;
+}
+
+.item:nth-child(6n + 1) {
+  background: #f55;
+  height: 200px;
+}
+
+.item:nth-child(6n + 2) {
+  background: #7e7;
+  height: 300px;
+}
+
+.item:nth-child(6n + 3) {
+  background: #66e;
+  height: 200px;
+}
+
+.item:nth-child(6n + 4) {
+  background: #4af;
+  height: 100px;
+}
+
+.item:nth-child(6n + 5) {
+  background: #ed5;
+  height: 150px;
+}
+
+.item:nth-child(6n + 6) {
+  background: #d5e;
+  height: 130px;
+}
+
+.result {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.button {
+  position: relative;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: white;
+  border: 1px solid #ccc;
+  appearance: none;
+  font-weight: bold;
+  width: 150px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  font-size: 0;
+}
+
+.image img {
+  width: 100%;
+}
+
+.description {
+  /* height: 15px; */
+  line-height: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .description, .result {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .description, .result {
+    color: black;
+  }
+}
