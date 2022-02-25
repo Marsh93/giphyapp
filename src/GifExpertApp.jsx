@@ -11,7 +11,7 @@ import "animate.css";
  * ? Should parameters
  */
 
-const user = "12563";
+const user = "";
 
 export default function GifExpertApp() {
   const [categories, setCategories] = useState([]);
