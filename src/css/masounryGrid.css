@@ -81,13 +81,15 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .description, .result {
+  .description,
+  .result {
     color: white;
   }
 }
 
 @media (prefers-color-scheme: light) {
-  .description, .result {
+  .description,
+  .result {
     color: black;
   }
 }

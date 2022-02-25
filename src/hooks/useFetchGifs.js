@@ -1,29 +1,32 @@
 import { useState, useEffect } from "react";
-import { getGif } from '../services/getGifs';
+import getGif from "../services/getGifs";
 
-export const useFetchGifs = ( category ) => {
-
+const useFetchGifs = (category) => {
   const [state, setState] = useState({
     data: [],
-    load: true
-  })
+    load: true,
+  });
 
-  useEffect( () => {
-    getGif( category )
-      .then( gifs => {
+  useEffect(() => {
+    getGif(category)
+      .then((gifs) => {
         setTimeout(() => {
           setState({
             data: gifs,
-            load: false
-          })
-        }, 3000); 
+            load: false,
+          });
+        }, 3000);
       })
-      .catch( err => setState({
-        data: [],
-        load: false
-      }));
-  }, [ category ])
+      // eslint-disable-next-line no-unused-vars
+      .catch((err) => {
+        setState({
+          data: [],
+          load: false,
+        });
+      });
+  }, [category]);
 
   return state;
+};
 
-}
+export default useFetchGifs;

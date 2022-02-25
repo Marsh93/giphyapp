@@ -1,13 +1,9 @@
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
-export default function Alert( { reason } ) {
-
-  return (
-    <div className='alert'>{ reason }</div>
-  )
+export default function Alert({ reason }) {
+  return <div className="alert">{reason}</div>;
 }
 
 Alert.propTypes = {
-  reason: PropTypes.string.isRequired
-}
-
+  reason: PropTypes.string.isRequired,
+};
