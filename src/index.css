@@ -1,5 +1,10 @@
+:root {
+  --main-bg-color: cornsilk;
+}
+
 body {
   padding: 60px;
+  background-color: var(--main-bg-color);
 }
 
 input {
