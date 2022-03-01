@@ -16,6 +16,6 @@
     "linebreak-style": "off",
     "object-curly-newline": "off",
     "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension" : [ 0 ]
+    "react/jsx-filename-extension" : [1, { "extensions": [".js", ".jsx"] }]
   }
 }

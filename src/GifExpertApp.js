@@ -17,7 +17,7 @@ export default function GifExpertApp() {
   const [messageError, setMessageError] = useState("");
 
   return (
-    <>
+    <div>
       <h1>Gif Search App</h1>
 
       <AddCategory
@@ -33,6 +33,6 @@ export default function GifExpertApp() {
       {categories.map((category) => (
         <GifGrid className="" key={category} category={category} />
       ))}
-    </>
+    </div>
   );
 }
