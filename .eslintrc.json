@@ -11,6 +11,12 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
+  "settings": {
+    "import/extensions": [
+      ".js",
+      ".jsx"
+    ]
+  },
   "plugins": ["react"],
   "rules": {
     "linebreak-style": "off",
