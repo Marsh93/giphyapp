@@ -1,0 +1,14 @@
+.empty {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-empty {
+  margin: 0.5rem 0;
+  color: dimgray;
+  font-weight: 700;
+}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AddCategory from "./components/category/AddCategory";
-import Alert from "./components/Alert/Alert";
+import Alert from "./components/alert/Alert";
 import GifGrid from "./components/GifGrid";
 import "animate.css";
 
