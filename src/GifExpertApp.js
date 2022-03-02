@@ -1,6 +1,6 @@
 import { useState } from "react";
-import AddCategory from "./components/AddCategory";
-import Alert from "./components/Alert";
+import AddCategory from "./components/category/AddCategory";
+import Alert from "./components/Alert/Alert";
 import GifGrid from "./components/GifGrid";
 import "animate.css";
 
@@ -17,7 +17,7 @@ export default function GifExpertApp() {
   const [messageError, setMessageError] = useState("");
 
   return (
-    <div>
+    <>
       <h1>Gif Search App</h1>
 
       <AddCategory
@@ -33,6 +33,6 @@ export default function GifExpertApp() {
       {categories.map((category) => (
         <GifGrid className="" key={category} category={category} />
       ))}
-    </div>
+    </>
   );
 }

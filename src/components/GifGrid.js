@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { JustifiedGrid } from "@egjs/react-grid";
 import useFetchGifs from "../hooks/useFetchGifs";
 import GifDetail from "./GifDetail";
+import Loading from "./loading/Loading";
 import "animate.css";
 import "../css/masounryGrid.css";
 
@@ -9,13 +10,13 @@ function GifGrid({ category }) {
   const { data: images, load } = useFetchGifs(category);
 
   return (
-    <div className="animate__animated animate__fadeIn">
+    <div className="">
       <h3 className="animate__animated animate__fadeIn">{category}</h3>
       <span className="animate__animated animate__flash">
-        {load && "Cargando gifs ..."}
+        {load && <Loading />}
       </span>
       <JustifiedGrid
-        className="container"
+        className="container animate__animated animate__bounceInLeft"
         gap={3}
         defaultDirection="end"
         align="justify"
