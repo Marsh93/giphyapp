@@ -68,7 +68,7 @@ export default function AddCategory({
       />
 
       {/* <button onClick={ handleAdd }>Agregar Categoría</button> */}
-      <button type="button">Agregar Categoría</button>
+      <button type="submit">Agregar Categoría</button>
     </form>
   );
 }
