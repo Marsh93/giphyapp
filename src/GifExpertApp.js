@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AddCategory from "./components/category/AddCategory";
-import Alert from "./components/alert/Alert";
+import Error from "./components/error/Error";
 import GifGrid from "./components/GifGrid";
 import "animate.css";
 
@@ -28,7 +28,7 @@ export default function GifExpertApp() {
 
       <hr />
 
-      {hasError && <Alert delay={3000} reason={messageError} />}
+      {hasError && <Error delay={3000} reason={messageError} />}
 
       {categories.map((category) => (
         <GifGrid className="" key={category} category={category} />

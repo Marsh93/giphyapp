@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
-import "./alert.css";
+import "./error.css";
 
-export default function Alert({ reason, delay }) {
+export default function Error({ reason, delay }) {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export default function Alert({ reason, delay }) {
   return visible ? <div className="alert"> {reason} </div> : null;
 }
 
-Alert.propTypes = {
+Error.propTypes = {
   reason: PropTypes.string.isRequired,
   delay: PropTypes.number.isRequired,
 };
