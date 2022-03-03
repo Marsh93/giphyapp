@@ -28,7 +28,14 @@ export default function GifExpertApp() {
 
       <hr />
 
-      {hasError && <Error delay={3000} reason={messageError} />}
+      {hasError && (
+        <Error
+          delay={3000}
+          reason={messageError}
+          setHasError={setHasError}
+          setMessageError={setMessageError}
+        />
+      )}
 
       {categories.map((category) => (
         <GifGrid className="" key={category} category={category} />
