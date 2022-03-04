@@ -12,26 +12,6 @@ export default function AddCategory({
     setInputValue(e.target.value);
   };
 
-  // const handleAdd = (e) => {
-  //   console.log("llamando metodo de boton");
-  //   e.preventDefault();
-
-  //   setCategories( cats => {
-
-  //     const hasError = !isCategoryValid( inputValue ) || hasDuplicatedCategory( cats, inputValue );
-  //     setHasError( hasError );
-
-  //     if (hasError) {
-  //       // return [ ...cats ];
-  //       return [];
-  //     }
-  //     // return [ inputValue, ...cats ];
-  //     return [ inputValue ];
-  //   });
-
-  //   setInputValue('');
-  // }
-
   const hasDuplicatedCategory = (categories, category) => {
     const existCategory = categories.includes(category);
     if (existCategory) setMessageError("Categoría Duplicada");
