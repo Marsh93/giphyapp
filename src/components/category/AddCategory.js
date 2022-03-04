@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
+import Button from "../button/Button";
 
 export default function AddCategory({
   setCategories,
@@ -46,9 +47,9 @@ export default function AddCategory({
         value={inputValue}
         onChange={handleInputChange}
       />
-
-      {/* <button onClick={ handleAdd }>Agregar Categoría</button> */}
-      <button type="submit">Agregar Categoría</button>
+      <Button disabled={inputValue === ""} type="submit">
+        Agregar Categoría
+      </Button>
     </form>
   );
 }
