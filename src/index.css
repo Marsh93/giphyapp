@@ -3,8 +3,14 @@
 }
 
 body {
-  padding: 60px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
   background-color: var(--main-bg-color);
+}
+
+.container-giff-expert {
+  padding: 60px;
 }
 
 input {
@@ -17,12 +23,23 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
+}
+
+.container-form-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 button {
   margin-left: 5px;
-  width: 150px;
+  /* width: 150px; */
   padding: 0.3rem;
+}
+
+.title-history {
+  text-align: center;
 }
 
 .card {

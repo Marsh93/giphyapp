@@ -43,12 +43,12 @@ export default function AddCategory({
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Ingrese una nueva categoria a buscar"
+        placeholder="Ingrese una categoria a buscar"
         value={inputValue}
         onChange={handleInputChange}
       />
       <Button disabled={inputValue === ""} type="submit">
-        Agregar Categoría
+        Buscar
       </Button>
     </form>
   );

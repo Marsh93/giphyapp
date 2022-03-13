@@ -12,7 +12,7 @@ const Button = styled.button`
   font-weight: bold;
   margin-left: 5px;
   padding: 0.4rem;
-  width: 200px;
+  width: ${(props) => props.width};
 `;
 
 export default Button;
