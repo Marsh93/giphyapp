@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaEye } from "react-icons/fa";
 import AddCategory from "./components/category/AddCategory";
 import Error from "./components/error/Error";
 import GifGrid from "./components/GifGrid";
@@ -35,8 +36,13 @@ export default function GifExpertApp() {
             setMessageError={setMessageError}
           />
           {!viewHistory && (
-            <Button onClick={handleViewHistory} type="button" width="150px">
-              Ver Historial
+            <Button
+              icon
+              onClick={handleViewHistory}
+              type="button"
+              width="130px"
+            >
+              <FaEye /> Ver Historial
             </Button>
           )}
         </div>

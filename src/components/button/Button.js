@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Button = styled.button`
   background: #6690ff;
@@ -13,6 +13,13 @@ const Button = styled.button`
   margin-left: 5px;
   padding: 0.4rem;
   width: ${(props) => props.width};
+  ${(props) =>
+    props.icon &&
+    css`
+      display: flex;
+      justify-content: space-around;
+      aling-items: center;
+    `}
 `;
 
 export default Button;

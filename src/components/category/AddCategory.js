@@ -1,5 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
+import { FaSearch } from "react-icons/fa";
 import Button from "../button/Button";
 
 export default function AddCategory({
@@ -47,8 +48,8 @@ export default function AddCategory({
         value={inputValue}
         onChange={handleInputChange}
       />
-      <Button disabled={inputValue === ""} type="submit">
-        Buscar
+      <Button icon disabled={inputValue === ""} type="submit" width="100px">
+        <FaSearch /> Buscar
       </Button>
     </form>
   );
