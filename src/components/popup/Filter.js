@@ -6,8 +6,8 @@ const CardFilter = styled.div`
   position: absolute;
   background: #df6064;
   color: white;
-  width: 200px;
-  height: 100px;
+  width: 150px;
+  height: 50px;
   border-radius: 15px;
   padding: 20px;
 `;
