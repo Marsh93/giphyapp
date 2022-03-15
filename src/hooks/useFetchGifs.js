@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import getGif from "../services/getGifs";
 
-const useFetchGifs = (category) => {
+const useFetchGifs = (category, filter) => {
   const [state, setState] = useState({
     data: [],
     load: true,
   });
 
   useEffect(() => {
-    getGif(category)
+    getGif(category, filter)
       .then((gifs) => {
         setTimeout(() => {
           setState({

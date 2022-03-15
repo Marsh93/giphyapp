@@ -7,8 +7,8 @@ import Warning from "./empty/Empty";
 import "animate.css";
 import "../css/masounryGrid.css";
 
-function GifGrid({ category }) {
-  const { data: images, load } = useFetchGifs(category);
+function GifGrid({ category, filter }) {
+  const { data: images, load } = useFetchGifs(category, filter);
 
   return (
     <div className="">
@@ -48,6 +48,7 @@ function GifGrid({ category }) {
 
 GifGrid.propTypes = {
   category: PropTypes.string.isRequired,
+  filter: PropTypes.number.isRequired,
 };
 
 export default GifGrid;

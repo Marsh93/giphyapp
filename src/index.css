@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--main-bg-color);
+  box-sizing: border-box;
 }
 
 .container-giff-expert {
@@ -27,6 +28,7 @@ form {
 }
 
 .container-form-control {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;

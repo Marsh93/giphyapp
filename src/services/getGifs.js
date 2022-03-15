@@ -1,5 +1,5 @@
-const getGif = async (category) => {
-  const url = `${process.env.REACT_APP_URL}search?q=${category}&limit=5&lang=es&api_key=${process.env.REACT_APP_APY_KEY}`;
+const getGif = async (category, filter) => {
+  const url = `${process.env.REACT_APP_URL}search?q=${category}&limit=${filter}&lang=es&api_key=${process.env.REACT_APP_APY_KEY}`;
   const response = await fetch(url);
   const { data } = await response.json();
 
