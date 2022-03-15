@@ -43,6 +43,7 @@ export default function AddCategory({
   return (
     <form onSubmit={handleSubmit}>
       <input
+        className="box-search"
         type="text"
         placeholder="Ingrese una categoria a buscar"
         value={inputValue}

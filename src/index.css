@@ -27,6 +27,10 @@ form {
   width: 90%;
 }
 
+.box-search {
+  padding: 0.1rem;
+}
+
 .container-form-control {
   position: relative;
   display: flex;
